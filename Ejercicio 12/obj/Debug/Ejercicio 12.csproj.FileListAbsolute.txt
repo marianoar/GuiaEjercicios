@@ -1,0 +1,6 @@
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\bin\Debug\Ejercicio 12.exe.config
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\bin\Debug\Ejercicio 12.exe
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\bin\Debug\Ejercicio 12.pdb
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\obj\Debug\Ejercicio 12.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\obj\Debug\Ejercicio 12.exe
+C:\Users\compa\Desktop\UTN\00 PyL 2 2020\GuiaEjercicios\GuiaEjercicios\Ejercicio 12\obj\Debug\Ejercicio 12.pdb
