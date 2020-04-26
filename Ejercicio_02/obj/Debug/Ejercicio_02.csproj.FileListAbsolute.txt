@@ -1,0 +1,7 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\bin\Debug\Ejercicio_02.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\bin\Debug\Ejercicio_02.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\bin\Debug\Ejercicio_02.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\obj\Debug\Ejercicio_02.csprojAssemblyReference.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\obj\Debug\Ejercicio_02.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\obj\Debug\Ejercicio_02.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio_02\obj\Debug\Ejercicio_02.pdb
