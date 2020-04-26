@@ -26,7 +26,7 @@ namespace Ejercicio_02
                 ingreso = Console.ReadLine();
                 isNumber = double.TryParse(ingreso, out number);
             }
-            cuadrado= Math.Pow(number, 2);
+            cuadrado = Math.Pow(number, 2);
             cubo = Math.Pow(number, 3);
 
             Console.WriteLine("El numero ingresado fue {0}, su cuadrado es {1} y su cubo es {2}", number, cuadrado, cubo);
