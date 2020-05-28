@@ -64,10 +64,12 @@ namespace Ejercicio_16_bis
                 if (i == 2)
                 {
                     alumno2.Estudiar(nota1, nota2);
+                    alumno2.CalcularFinal();
                 }
                 if (i == 3)
                 {
                     alumno3.Estudiar(nota1, nota2);
+                    alumno3.CalcularFinal();
                 }
             }
 

@@ -8,8 +8,8 @@ namespace Ejercicio_16_bis
 {
     public class Alumno
     {
-        private byte nota1;
-        private byte nota2;
+        private int nota1;
+        private int nota2;
         private float notaFinal;
         public string apellido;
         public string nombre;
@@ -23,7 +23,7 @@ namespace Ejercicio_16_bis
 
             if (nota1 >= 4 && nota2 >= 4)
             {
-                notaFinal = 5;//new Random().Next(4,11);
+                notaFinal = new Random().Next(4,10);
             }
             else
             {
@@ -49,11 +49,8 @@ namespace Ejercicio_16_bis
             }
             else
             {
-                return retorno = "Nombre: " + nombre + "\nApellido: " + apellido + "\nLegajo:" + legajo + "\nNota Final: Alumno Desparobado"; ;
+                return retorno = "Nombre: " + nombre + "\nApellido: " + apellido + "\nLegajo:" + legajo + "\nNota Final: Alumno Desparobado";
             }
-
-
-
         }
 
         public static bool ValidarEsNumero(string input)
