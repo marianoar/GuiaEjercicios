@@ -10,27 +10,29 @@ namespace Ejercicio_42
     {
         static void Main(string[] args)
         {
+
+         //   Pruebas.MetodoExc();
+
             int a = 0;
             try
             {
                 MiClase miclase = new MiClase(a);
             }
-            catch
+            catch (Exception e)
             {
-                Console.WriteLine("- - - - - Catch primer Excepcion");
-                try
+                Console.WriteLine(e.Message);
+              try
                 {
                     MiClase miclaseDos = new MiClase(a);
                 }
                 catch
                 {
-                    
-                    throw new UnaExcepcion();
+                   // throw new MiExcepcion(e.InnerException);
                 }
             }
             finally // por aca pasa siempre
             {
-
+                Console.WriteLine("\nbloque finaly");
             }
             Console.ReadKey();
            // MiClase.Lanzar();

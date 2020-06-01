@@ -10,6 +10,9 @@ namespace Ejercicio_42
     {
         int a;
         string b;
+
+
+
         public MiClase(int a) : this()
         {
             if (a == 0)
@@ -27,6 +30,7 @@ namespace Ejercicio_42
 
         public static void Lanzar()
         {
+         
             throw new DivideByZeroException();
 
         }

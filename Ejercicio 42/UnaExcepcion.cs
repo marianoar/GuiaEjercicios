@@ -9,7 +9,11 @@ namespace Ejercicio_42
 {
     public class UnaExcepcion:Exception
     {
-
+        public UnaExcepcion() : base()
+        {
+            // mensaje = "- - - - - Catch Segunda Excepcion";
+            Mostrar();
+        }
         public static string Mostrar()
         {
             string mensaje = "- - - - - Catch Segunda Excepcion";

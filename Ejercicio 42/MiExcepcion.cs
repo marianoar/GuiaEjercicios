@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_42
 {
-    class MiExcepcion
+    class MiExcepcion: Exception
     {
+        public MiExcepcion(Exception e) : base()
+        {
+            
+        }
+
     }
 }

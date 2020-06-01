@@ -27,13 +27,27 @@ namespace Ejercicio_17_true
             return this.tinta;
         }
 
-        /*public bool Pintar(short gasto, out string dibujo)
+        public bool Pintar(short gasto, out string dibujo)
         {
-        }*/
+            dibujo = "*";
+            
+            if (getTinta() == 0)
+            {
+                return false;
+            }
+           
+            for (int i = 0; i < gasto; i++)
+            {
+                 Console.Write(dibujo);
+            }
+            
+             return true;
+            
+        }
 
         public void Recargar()
         {
-
+            setTinta(100);
         }
 
         private void setTinta (short tinta)
@@ -41,7 +55,23 @@ namespace Ejercicio_17_true
             short tintaActual;
             tintaActual = getTinta();
 
-          //  this.tinta = tintaActual + tinta;
+            if (tinta > 0)
+            {
+                this.tinta=tintaActual -= tinta;
+                if (this.tinta > 100)
+                {
+                    this.tinta = 100;
+                }
+            }
+            else
+            {
+              /* this.tinta = tintaActual -= tinta;
+                if (this.tinta < 0)
+                {
+                    this.tinta = 0;
+                }*/
+            }
+          
 
         }
     

@@ -1,0 +1,7 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\bin\Debug\Ejercicio 17 true.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\bin\Debug\Ejercicio 17 true.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\bin\Debug\Ejercicio 17 true.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\obj\Debug\Ejercicio 17 true.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\obj\Debug\Ejercicio 17 true.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\obj\Debug\Ejercicio 17 true.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 17 true\obj\Debug\Ejercicio 17 true.csprojAssemblyReference.cache
