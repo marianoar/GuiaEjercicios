@@ -8,5 +8,20 @@ namespace Ejercicio_42
 {
     class OtraClase
     {
+        public OtraClase()
+        {
+            try
+            {
+                new MiClase();
+            }
+            catch(UnaExcepcion ex)
+            {
+                Console.WriteLine("mi excepcion");
+                throw new MiExcepcion(ex);
+            }
+        }
+
+
     }
 }
+

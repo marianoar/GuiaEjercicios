@@ -8,9 +8,14 @@ namespace Ejercicio_42
 {
     class MiExcepcion: Exception
     {
-        public MiExcepcion(Exception e) : base()
+        public MiExcepcion(UnaExcepcion e) : this()
         {
             
+        }
+
+        public MiExcepcion() : base()
+        {
+        
         }
 
     }

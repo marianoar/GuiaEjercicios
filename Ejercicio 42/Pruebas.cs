@@ -15,7 +15,7 @@ namespace Ejercicio_42
                 Console.Write("ingrese numero: ");
                 int a = int.Parse(Console.ReadLine());
 
-            }catch (FormatException )
+            }catch (FormatException)
             {
                 Console.WriteLine("Error");
 

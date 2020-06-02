@@ -12,30 +12,38 @@ namespace Ejercicio_42
         {
 
          //   Pruebas.MetodoExc();
-
+         
             int a = 0;
+
             try
             {
-                MiClase miclase = new MiClase(a);
+                MiClase miClase = new MiClase();
             }
-            catch (Exception e)
+            catch
             {
-                Console.WriteLine(e.Message);
-              try
-                {
-                    MiClase miclaseDos = new MiClase(a);
-                }
-                catch
-                {
-                   // throw new MiExcepcion(e.InnerException);
-                }
+                
+                Console.WriteLine("Tercera -");
             }
-            finally // por aca pasa siempre
-            {
-                Console.WriteLine("\nbloque finaly");
-            }
-            Console.ReadKey();
-           // MiClase.Lanzar();
+        
+            
+                /* Console.WriteLine(e.Message);
+               try
+                 {
+                     MiClase miclaseDos = new MiClase(a);
+                 }
+                 catch
+                 {
+                    // throw new MiExcepcion(e.InnerException);
+                 }
+             }
+             finally // por aca pasa siempre
+             {
+                 Console.WriteLine("\nbloque finaly");
+             }
+            
+            // MiClase.Lanzar();*/
+                Console.ReadKey();
+            
         }
     }
 }

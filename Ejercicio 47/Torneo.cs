@@ -8,7 +8,7 @@ namespace Ejercicio_47
 {
     public class Torneo<T> where T : Equipo
     {
-        private List<T> equipos;
+        private List<T> equipos = new List<T>();
         string nombre;
 
         Random a = new Random();
@@ -21,29 +21,37 @@ namespace Ejercicio_47
         }
 
 
-        /*
-        public static bool operator ==(T equipoA, T equipoB)
+
+        public static bool operator ==(List<T> equipos, T equipo)
         {
-           if((equipoA.Nombre==equipoB.Nombre) && (equipoA.FechaCreacion == equipoB.FechaCreacion))
+            for (int i = 0; i < equipos.Count(); i++)
             {
-                return true;
+
+
+                if ((equipos[i].Nombre == equipo.Nombre) && (equipos[i].FechaCreacion == equipo.FechaCreacion))
+                {
+                    return true;
+                }
+                else
+                {
+                    continue;
+                }
             }
-            else
-            {
-                return false;
-            }
- 
-         
+            return false;
         }
-        public static bool operator !=()
+        public static bool operator !=(List<T> equipos, T equipo)
         {
-          
+          //  return (!(equipoA == equipoB));
         }
+
+        public static implicit operator + (List<T> equipos, T equipo){
+
+            }
     public string Mostrar()
         {
             return "";
 
-        }*/
+        }
 
         private void CalculaPartido(T a, T b)
         {
