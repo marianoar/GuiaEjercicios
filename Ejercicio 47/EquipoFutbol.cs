@@ -8,6 +8,9 @@ namespace Ejercicio_47
 {
     public class EquipoFutbol : Equipo
     {
+        public EquipoFutbol() : base ()
+        {
 
+        }
     }
 }

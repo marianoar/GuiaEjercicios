@@ -8,5 +8,12 @@ namespace Ejercicio_47
 {
     public class EquipoBasquet : Equipo
     {
+        public EquipoBasquet(string nombre, DateTime fechaCreacion) : base()
+        {
+            Nombre = nombre;
+            FechaCreacion = fechaCreacion;
+
+
+        }
     }
 }

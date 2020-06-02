@@ -11,6 +11,15 @@ namespace Ejercicio_47
         private List<T> equipos = new List<T>();
         string nombre;
 
+        public Torneo (string nombre)
+        {
+            this.nombre = nombre;
+        }
+
+        public string Nombre
+        {
+            get { return nombre; }
+        }
         Random a = new Random();
         Random b = new Random();
 
@@ -22,13 +31,12 @@ namespace Ejercicio_47
 
 
 
-        public static bool operator ==(List<T> equipos, T equipo)
+        public static bool operator ==(Torneo<T> torneo, T equipo)
         {
-            for (int i = 0; i < equipos.Count(); i++)
+            for (int i = 0; i < torneo.equipos.Count(); i++)
             {
 
-
-                if ((equipos[i].Nombre == equipo.Nombre) && (equipos[i].FechaCreacion == equipo.FechaCreacion))
+                if ((torneo.equipos[i].Nombre == equipo.Nombre) && (torneo.equipos[i].FechaCreacion == equipo.FechaCreacion))
                 {
                     return true;
                 }
@@ -39,41 +47,57 @@ namespace Ejercicio_47
             }
             return false;
         }
-        public static bool operator !=(List<T> equipos, T equipo)
+        public static bool operator !=(Torneo<T> torneo, T equipo)
         {
-          //  return (!(equipoA == equipoB));
+            return (!(torneo == equipo));
         }
 
-        public static implicit operator + (List<T> equipos, T equipo){
-
+        public static bool operator +(Torneo<T> torneo, T equipo) {
+            if (torneo != equipo)
+            {
+                torneo.equipos.Add(equipo);
+                return true;
+            } else
+            { return false;
             }
-    public string Mostrar()
+        }
+        public string Mostrar()
         {
-            return "";
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("\nTorneo: "+nombre);
+            sb.AppendLine("\nEquipos inscriptos: ");
+            for (int i = 0; i < this.equipos.Count(); i++)
+            {
+                sb.AppendLine(equipos[i].Nombre);
+            }
+
+
+            return sb.ToString();
 
         }
 
-        private void CalculaPartido(T a, T b)
+        private string CalculaPartido(T a, T b)
         {
-            Random aux = new Random();
+            Random tantos = new Random();
+            StringBuilder sb = new StringBuilder();
+            sb.Append(a.Nombre + " : " + tantos.Next(0, 10) + " goles - "+ b.Nombre +" : "+ tantos.Next(0, 10) );
+            return sb.ToString();
         }
 
-        public string JugarPartido{
+        public string JugarPartido {
             get
             {
-                a.Next(1, equipos.Count);
-                b.Next(1, equipos.Count);
-                for (int i = 0; i < equipos.Count; i++)
+                int a= new Random().Next(0, equipos.Count);
+                int b = new Random().Next(0, equipos.Count);
+                while (a == b)
                 {
-
+                    b = new Random().Next(0, equipos.Count); 
                 }
-                return CalculaPartido();
-               
-                
 
-
+                return CalculaPartido(this.equipos[a], this.equipos[b]);
             }
-         }
-
+        }
     }
 }
+   
+
