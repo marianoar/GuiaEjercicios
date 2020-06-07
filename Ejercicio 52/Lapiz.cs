@@ -22,7 +22,7 @@ namespace Ejercicio_52
             set { }
         }
 
-        public EscrituraWrapper Escribir(string texto)
+        public EscrituraWrapper Escribir(string texto) // por que aca no puedo hacer explicito?
         {
             float reducir = texto.Length * (float)0.1;
 
@@ -37,7 +37,7 @@ namespace Ejercicio_52
             tamanioMina = unidades;
         }
 
-        public bool Recargar(int unidades)
+        bool IAcciones.Recargar(int unidades)
         {
             throw new NotImplementedException();
   
