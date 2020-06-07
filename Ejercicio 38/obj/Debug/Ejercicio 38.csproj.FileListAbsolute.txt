@@ -1,0 +1,6 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\bin\Debug\Ejercicio 38.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\bin\Debug\Ejercicio 38.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\bin\Debug\Ejercicio 38.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\obj\Debug\Ejercicio 38.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\obj\Debug\Ejercicio 38.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 38\obj\Debug\Ejercicio 38.pdb
