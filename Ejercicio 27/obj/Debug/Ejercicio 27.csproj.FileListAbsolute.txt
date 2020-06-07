@@ -1,0 +1,7 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\bin\Debug\Ejercicio 27.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\bin\Debug\Ejercicio 27.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\bin\Debug\Ejercicio 27.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\obj\Debug\Ejercicio 27.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\obj\Debug\Ejercicio 27.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\obj\Debug\Ejercicio 27.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 27\obj\Debug\Ejercicio 27.csprojAssemblyReference.cache
