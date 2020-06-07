@@ -10,9 +10,13 @@ namespace Ejercicio_19
     {
         private int cantidadSumas;
 
+        public int CantidadSumas
+        {
+            get { return cantidadSumas; }
+        }
         public Sumador (int cantidadSumas) : this()
         {
-
+            this.cantidadSumas = cantidadSumas;
         }
         public Sumador()
         {
@@ -29,14 +33,23 @@ namespace Ejercicio_19
         {
             cantidadSumas++;
             StringBuilder sb = new StringBuilder();
-            sb.AppendLine(" " + a);
+            sb.Append(a);
             sb.AppendLine(" " + b);
             return sb.ToString();
         }
-
+        /*c. Generar una conversión explícita que retorne cantidadSumas.
+            d. Sobrecargar el operador + (suma) para que puedan sumar cantidadSumas y retornen un long
+            con dicho valor.
+            e. Sobrecargar el operador | (pipe) para que retorne True si ambos sumadores tienen igual
+            cantidadSumas*/
         public static explicit operator int (Sumador s)
         {
             return s.cantidadSumas;
+        }
+        public static long operator +(Sumador s1, Sumador s2)
+        {
+            return s1.cantidadSumas + s2.cantidadSumas;
+            
         }
         public static bool operator | (Sumador s1, Sumador s2)
         { 
@@ -47,11 +60,6 @@ namespace Ejercicio_19
             return false;
         }
 
-        public static long operator + (Sumador s1, Sumador s2)
-        {
-            long aux=0;
-            aux = s1.cantidadSumas + s2.cantidadSumas;
-            return aux;
-        }
+      
     }
 }

@@ -12,3 +12,10 @@ C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\GuiaEjercicios\Ejercicio 19\obj\
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.exe
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\bin\Debug\Ejercicio 19.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\bin\Debug\Ejercicio 19.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csprojAssemblyReference.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 19\obj\Debug\Ejercicio 19.pdb
