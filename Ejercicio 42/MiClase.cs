@@ -20,8 +20,9 @@ namespace Ejercicio_42
             {
                c= b / a;
             }
-            catch (DivideByZeroException)
+            catch (DivideByZeroException x)
             {
+                Console.WriteLine($"\nPrimer Excepcion - - - - \n{x}");
                 LanzarExcepcion();
             }
         }
@@ -34,15 +35,15 @@ namespace Ejercicio_42
             }
             catch(DivideByZeroException e)
             {
-                Console.WriteLine("Segunda Excepcion -- Una Exception");
-               // Console.WriteLine(e.Message);
+                Console.WriteLine($"\nSegunda Excepcion -- UnaException  - - -\n {e}\n");
+               // string exc = $"\nSegunda Excepcion -- Una Exception {e}\n";
+              
                 throw new UnaExcepcion(e);
             }
         }
         public static void LanzarExcepcion()
         {
-            Console.WriteLine("Primer Excepcion - dividir por zero");
-
+           
             throw new DivideByZeroException();
 
         }

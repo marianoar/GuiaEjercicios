@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_42
 {
-    class MiExcepcion: Exception
+    public class MiExcepcion: Exception
     {
         public MiExcepcion(UnaExcepcion e) : this()
         {

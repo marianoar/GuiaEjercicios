@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Ejercicio_42
 {
-    class OtraClase
+    public class OtraClase
     {
         public OtraClase()
         {
@@ -16,7 +16,7 @@ namespace Ejercicio_42
             }
             catch(UnaExcepcion ex)
             {
-                Console.WriteLine("mi excepcion");
+               // Console.WriteLine("mi excepcion");
                 throw new MiExcepcion(ex);
             }
         }

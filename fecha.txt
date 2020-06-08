@@ -1,0 +1,3 @@
+Tercera Exception Ejercicio_42.MiExcepcion: Se produjo una excepción de tipo 'Ejercicio_42.MiExcepcion'.
+   en Ejercicio_42.OtraClase..ctor() en C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 42\OtraClase.cs:línea 20
+   en Ejercicio_54.Program.Main(String[] args) en C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 54\Program.cs:línea 21

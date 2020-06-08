@@ -8,7 +8,7 @@ namespace Ejercicio_52
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // INCOMPLETO ->FALTA SUMAR EL EJ 53
         {
             ConsoleColor colorOriginal = Console.ForegroundColor;
             Lapiz miLapiz = new Lapiz(10);

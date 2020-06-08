@@ -9,9 +9,10 @@ namespace Ejercicio_42
 {
     public class UnaExcepcion:Exception
     {
+        string texto;
         public UnaExcepcion(Exception e) : base()
         {
-           
+            
            
         }
        

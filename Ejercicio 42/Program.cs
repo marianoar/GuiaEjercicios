@@ -8,7 +8,7 @@ namespace Ejercicio_42
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) //habria q revisarlo de nuevo por q cambie visibilidad 7/6
         {
 
          //   Pruebas.MetodoExc();
@@ -19,10 +19,10 @@ namespace Ejercicio_42
             {
                 MiClase miClase = new MiClase();
             }
-            catch
+            catch (Exception e)
             {
                 
-                Console.WriteLine("Tercera -");
+                Console.WriteLine($"\nTercera -{e}");
             }
         
             
