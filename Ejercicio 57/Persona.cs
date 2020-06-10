@@ -11,5 +11,16 @@ namespace Ejercicio_57
         string nombre;
         string apellido;
 
+        public Persona ( string nombre, string apellido)
+        {
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+
+        static void Guardar()
+        {
+
+        }
+
     }
 }

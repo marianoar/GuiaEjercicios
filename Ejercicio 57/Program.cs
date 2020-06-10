@@ -11,6 +11,8 @@ namespace Ejercicio_57
         static void Main(string[] args)
         {
             Console.Title = "Ejercicio 57";
+
+            Persona persona = new Persona("utn", "fra");
         }
     }
 }
