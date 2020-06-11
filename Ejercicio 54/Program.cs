@@ -11,8 +11,7 @@ namespace Ejercicio_54
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {       
             //int a = 0;
             string ruta = @"C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\fecha.txt";
            
@@ -22,8 +21,7 @@ namespace Ejercicio_54
             }
             catch (Exception e)
             {
-              
-               ArchivoTexto.Guardar(ruta, $"Tercera Exception {e}"); //  excepcion MiException
+                ArchivoTexto.Guardar(ruta, $"Tercera Exception {e}"); //  excepcion MiException
                //Console.WriteLine($"Tercera Exception - - - \n {e}");
             }
             finally

@@ -11,8 +11,21 @@ namespace Ejercicio_42
         int a;
         int b;
         int c;
-        
 
+        public MiClase()
+        {
+            try
+            {
+                MiClase otroObjeto = new MiClase(0);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine($"\nSegunda Excepcion -- UnaException  - - -\n {e}\n");
+                // string exc = $"\nSegunda Excepcion -- Una Exception {e}\n";
+
+                throw new UnaExcepcion(e);
+            }
+        }
         public MiClase(int a)
         {
             
@@ -27,20 +40,7 @@ namespace Ejercicio_42
             }
         }
 
-        public MiClase()
-        {
-            try
-            {
-                MiClase otroObjeto = new MiClase(0);
-            }
-            catch(DivideByZeroException e)
-            {
-                Console.WriteLine($"\nSegunda Excepcion -- UnaException  - - -\n {e}\n");
-               // string exc = $"\nSegunda Excepcion -- Una Exception {e}\n";
-              
-                throw new UnaExcepcion(e);
-            }
-        }
+     
         public static void LanzarExcepcion()
         {
            

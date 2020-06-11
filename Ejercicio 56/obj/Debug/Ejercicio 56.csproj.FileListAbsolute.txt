@@ -2,9 +2,9 @@ C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\bin\Debug\Ejercicio
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\bin\Debug\Ejercicio 56.exe
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\bin\Debug\Ejercicio 56.pdb
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio 56.csprojAssemblyReference.cache
-C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio_56.Form1.resources
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio_56.Properties.Resources.resources
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio 56.csproj.GenerateResource.cache
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio 56.csproj.CoreCompileInputs.cache
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio 56.exe
 C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio 56.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 56\obj\Debug\Ejercicio_56.Frm.resources

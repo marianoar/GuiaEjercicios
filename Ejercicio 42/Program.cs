@@ -17,7 +17,7 @@ namespace Ejercicio_42
 
             try
             {
-                MiClase miClase = new MiClase();
+                OtraClase miClase = new OtraClase();
             }
             catch (Exception e)
             {

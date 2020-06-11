@@ -16,7 +16,7 @@ namespace Ejercicio_42
             }
             catch(UnaExcepcion ex)
             {
-               // Console.WriteLine("mi excepcion");
+                Console.WriteLine($"UnaExcepcion -{ex}");
                 throw new MiExcepcion(ex);
             }
         }

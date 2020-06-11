@@ -23,18 +23,17 @@ namespace Ejercicio_54
             {
                 StreamReader reader = new StreamReader(ruta);
                 string linea;
+
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\n\nLectura del archivo :");
                 while ((linea = reader.ReadLine()) != null)
                 {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("Lectura del archivo :");
                     Console.WriteLine(linea);
-
                 }
             }
             catch
             {
-                throw new FileNotFoundException();
-                
+                throw new FileNotFoundException();             
             }
             return true;
 

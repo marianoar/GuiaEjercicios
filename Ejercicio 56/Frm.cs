@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Ejercicio_56
 {
@@ -17,12 +18,39 @@ namespace Ejercicio_56
             InitializeComponent();
         }
 
-        private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }
 
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string rutaArch = String.Empty;
+           
+            openFileDialog.InitialDirectory= @"C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios";
+            openFileDialog.ShowDialog();
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                //Get the path of specified file
+                rutaArch = openFileDialog.FileName;
+
+                //Read the contents of the file into a stream
+               // var fileStream = openFileDialog.OpenFile();
+                
+                using (StreamReader reader = new StreamReader(rutaArch))
+                {
+                    while(reader.ReadLine()!=null)
+                    {
+                        richTextBox.Text = reader.ReadLine();
+                        richTextBox.AppendText ( reader.ReadLine());
+                    }
+                    //contenido = reader.ReadToEnd();
+                }
+            }
+        }
+
+        private void guardarToolStripMenuItem1_Click(object sender, EventArgs e)
         {
 
         }
