@@ -13,11 +13,26 @@ namespace Ejercicio_56
 {
     public partial class Frm : Form
     {
+  /* ojo falta hacer el punto d. Al hacer click sobre "Guardar", se deberá guardar el mismo archivo abierto (último guardado
+  o abierto desde la interfaz). En el caso que no haya ningún "último archivo", se comportará  igual que el "Guardar Como…". Reutilizar código.*/
+        string rutaArch = String.Empty;
+        bool archivo=false;
         public Frm()
         {
             InitializeComponent();
         }
+        private void Frm_Load(object sender, EventArgs e)
+        {
+            ContarCaracteres();
+        }
 
+        public string ContarCaracteres()
+        {
+            int a = richTextBox.Text.Length;
+            toolStripStatusLabel.Text = a.ToString() + " caracteres.";
+            return toolStripStatusLabel.Text;
+
+        }
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
@@ -25,7 +40,7 @@ namespace Ejercicio_56
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string rutaArch = String.Empty;
+            
            
             openFileDialog.InitialDirectory= @".\\";
           
@@ -47,11 +62,53 @@ namespace Ejercicio_56
                               richTextBox.AppendText (reader.ReadLine());
                           }*/
                       richTextBox.Text = reader.ReadToEnd();
+                    toolStripStatusLabel.Text=ContarCaracteres().ToString() + " caracteres.";
+                    archivo = true;
                 }
             }
         }
 
         private void guardarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            if (archivo)
+            {
+
+
+            }
+            else
+            {
+
+
+
+            }
+            
+        }
+
+        private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.InitialDirectory = @".\\";
+            saveFileDialog1.FileName = string.Empty;
+            saveFileDialog1.Filter = "Archivo de texto (*.txt)| *.txt";
+            // string path = Directory.GetCurrentDirectory();
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+
+                try
+                {
+                    StreamWriter sw = new StreamWriter(saveFileDialog1.FileName);
+
+                    sw.Write(richTextBox.Text);
+
+                    sw.Close();
+                }
+                catch (Exception)
+                {
+
+                }
+            }
+        }
+
+        private void saveFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
         }
