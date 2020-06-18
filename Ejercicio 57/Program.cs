@@ -13,6 +13,18 @@ namespace Ejercicio_57
             Console.Title = "Ejercicio 57";
 
             Persona persona = new Persona("utn", "fra");
+            string path = ".\\a.xml";
+
+            try
+            {
+                Persona.Guardar(path, persona);
+            }
+            catch (Excepciones e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Console.ReadKey();
         }
     }
 }
