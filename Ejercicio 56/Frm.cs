@@ -27,8 +27,9 @@ namespace Ejercicio_56
         {
             string rutaArch = String.Empty;
            
-            openFileDialog.InitialDirectory= @"C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios";
-            openFileDialog.ShowDialog();
+            openFileDialog.InitialDirectory= @".\\";
+          
+           // openFileDialog.ShowDialog();
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
@@ -38,14 +39,14 @@ namespace Ejercicio_56
                 //Read the contents of the file into a stream
                // var fileStream = openFileDialog.OpenFile();
                 
-                using (StreamReader reader = new StreamReader(rutaArch))
+                using (StreamReader reader = new StreamReader(openFileDialog.FileName))
                 {
-                    while(reader.ReadLine()!=null)
-                    {
-                        richTextBox.Text = reader.ReadLine();
-                        richTextBox.AppendText ( reader.ReadLine());
-                    }
-                    //contenido = reader.ReadToEnd();
+                         /* while (reader.ReadLine() != null)
+                          {
+                              richTextBox.Text = reader.ReadLine();
+                              richTextBox.AppendText (reader.ReadLine());
+                          }*/
+                      richTextBox.Text = reader.ReadToEnd();
                 }
             }
         }
