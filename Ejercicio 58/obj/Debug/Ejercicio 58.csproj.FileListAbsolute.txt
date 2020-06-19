@@ -1,0 +1,12 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\bin\Debug\Ejercicio 58.dll
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\bin\Debug\Ejercicio 58.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\bin\Debug\Ejercicio 56.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\bin\Debug\Ejercicio 56.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\bin\Debug\Ejercicio 56.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.csprojAssemblyReference.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio_56.Frm.resources
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.csproj.GenerateResource.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.csproj.CopyComplete
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.dll
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58\obj\Debug\Ejercicio 58.pdb
