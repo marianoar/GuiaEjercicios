@@ -1,0 +1,2 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58 IO\obj\Debug\Ejercicio 58 IO.csprojAssemblyReference.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 58 IO\obj\Debug\Ejercicio 58 IO.csproj.CoreCompileInputs.cache

@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Text;
 using System.Windows.Forms;
 
-
-namespace Ejercicio_58_bis
+namespace Ejercicio_60
 {
     static class Program
     {
@@ -18,7 +16,7 @@ namespace Ejercicio_58_bis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm());
+            Application.Run(new Form1());
         }
     }
 }

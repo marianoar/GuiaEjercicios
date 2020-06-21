@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
+
 namespace Ejercicio_58_bis
 {
     public partial class Frm : Form
@@ -40,21 +41,18 @@ namespace Ejercicio_58_bis
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
-           
-            openFileDialog.InitialDirectory= @".\\";
-          
-           // openFileDialog.ShowDialog();
-
+           // openFileDialog.FileName = string.Empty;
+            openFileDialog.InitialDirectory = @".\\";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
+               // openFileDialog.FileName = string.Empty;
                 //Get the path of specified file
                 rutaArch = openFileDialog.FileName;
 
                 //Read the contents of the file into a stream
                // var fileStream = openFileDialog.OpenFile();
                 
-                using (StreamReader reader = new StreamReader(openFileDialog.FileName))
+                using (StreamReader reader = new StreamReader(rutaArch))
                 {
                          /* while (reader.ReadLine() != null)
                           {
