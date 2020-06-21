@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace Ejercicio_60
 {
@@ -69,7 +70,23 @@ namespace Ejercicio_60
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (int.TryParse(txtid.Text, out int a) && (txtid.Text != string.Empty))
+                {
+                    cn.Open();
+                    command = new SqlCommand();
+                    command.Connection = cn;
+                    command.Parameters.Add(new SqlParameter("id", txtid.Text));
+                    command.CommandText = "update Production.Product set name='Mariano' where ProductID =@id";
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+                    cn.Close();
+                }
+            }
+            catch(Exception )
+            {
+                MessageBox.Show("Cannot insert duplicate key row in object 'Production.Product' with unique index 'AK_Product_Name'");
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -95,7 +112,10 @@ namespace Ejercicio_60
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             listBox.Items.Clear();
-            cn.Open();
+          //  if (cn.State != ConnectionState.Open)
+         //   {
+                cn.Open();
+         //   }
             command = new SqlCommand();
             command.Connection = cn;
             command.CommandText = "select productid, name, productnumber from Production.Product";
