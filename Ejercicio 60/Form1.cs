@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
@@ -38,14 +31,8 @@ namespace Ejercicio_60
            
             SqlDataReader sqlDataReader = command.ExecuteReader();
             while (sqlDataReader.Read()) {
-             
-               // sb.AppendLine("ProductId: "+sqlDataReader[0].ToString()+" - Nombre: "+sqlDataReader[1].ToString()+" - Product number: "+ sqlDataReader[2].ToString());
                 listBox.Items.Add("ProductId: " + sqlDataReader[0].ToString() + " - Nombre: " + sqlDataReader[1].ToString() + " - Product number: " + sqlDataReader[2].ToString());
             }
-          //  MessageBox.Show(sb.ToString());
-            //listBox.Items.Add(sb);
-            listBox.Refresh();
-            
             cn.Close();
             return true;
         }
@@ -64,60 +51,62 @@ namespace Ejercicio_60
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            command.Parameters.Clear();
             cn.Open();
             command = new SqlCommand();
             command.Connection = cn;
          //   command.CommandText = "insert into Production.Product ( Name, ProductNumber, SafetyStockLevel, ReorderPoint, StandardCost, ListPrice, DaysToManufacture, SellStartDate) values('"+txtName.Text+"', '"+txtNumber.Text+"', 3,1,0,0,0,0)";
-            
+
             command.CommandText = "insert into Production.Product ( Name, ProductNumber, SafetyStockLevel, ReorderPoint, StandardCost, ListPrice, DaysToManufacture, SellStartDate) values(@nombre, @productnumber, 3,1,0,0,0,0)";
             command.Parameters.Add(new SqlParameter("nombre", txtName.Text));
             command.Parameters.Add(new SqlParameter("productnumber", txtNumber.Text));
 
             SqlDataReader sqlDataReader = command.ExecuteReader();
-          
-            // command.CommandText += txtName.Text;
-            // command.CommandText += txtNumber.Text;
-            //command.CommandText = "select productid, name, productnumber from Production.Product where name=" + txtName.Text;
 
-            //  MessageBox.Show(sb.ToString());
-            //listBox.Items.Add(sb);
             listBox.Refresh();
-       
-            /*
-           
-            while (sqlDataReader.Read())
-            {
-
-                sb.AppendLine("ProductId: " + sqlDataReader[0].ToString() + " - Nombre: " + sqlDataReader[1].ToString() + " - Product number: " + sqlDataReader[2].ToString());
-
-            }
-            MessageBox.Show(sb.ToString());
-            listBox.Items.Add(sb);
-            listBox.Refresh();
-            */
             cn.Close();
-        
-
         }
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-          
-            SqlDataReader sqlDataReader =(SqlDataReader)listBox.SelectedItem;
-
-            MessageBox.Show(sqlDataReader[2].ToString());
 
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            try
+            {
+                 if (int.TryParse(txtid.Text, out int a) && (txtid.Text != string.Empty)){
+                    cn.Open();
+                    command = new SqlCommand();
+                    command.Connection = cn;
+                    command.Parameters.Add(new SqlParameter("id", txtid.Text));
+                    command.CommandText = "delete from Production.Product where ProductID =@id";
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+                    cn.Close();
+                 }
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            listBox.Items.Clear();
             cn.Open();
             command = new SqlCommand();
             command.Connection = cn;
             command.CommandText = "select productid, name, productnumber from Production.Product";
-            //command.CommandText = "delete from into Production.Product ( Name, ProductNumber, SafetyStockLevel, ReorderPoint, StandardCost, ListPrice, DaysToManufacture, SellStartDate) values('" + txtName.Text + "', '" + txtNumber.Text + "', 3,1,0,0,0,0)";
 
+            SqlDataReader sqlDataReader = command.ExecuteReader();
+            while (sqlDataReader.Read())
+            {
+                listBox.Items.Add("ProductId: " + sqlDataReader[0].ToString() + " - Nombre: " + sqlDataReader[1].ToString() + " - Product number: " + sqlDataReader[2].ToString());
+            }
+
+            cn.Close();
         }
     }
 }
