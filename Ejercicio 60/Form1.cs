@@ -12,9 +12,15 @@ namespace Ejercicio_60
         public Form1()
         {
             InitializeComponent();
+            try
+            {
+                cn = new SqlConnection();
+                cn.ConnectionString = @"Data Source=DESKTOP-NT5B90I\SQLEXPRESS; Initial Catalog=AdventureWorks;Integrated Security=True";
+            }
+            catch
+            {
 
-            cn = new SqlConnection();
-            cn.ConnectionString = @"Data Source=DESKTOP-NT5B90I\SQLEXPRESS; Initial Catalog=AdventureWorks;Integrated Security=True";
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
