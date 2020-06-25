@@ -20,7 +20,7 @@ namespace Ejercicio_61
 
         //i. Guardar: guardará una nueva persona en la base de datos.
        
-        static List<Persona> lista;
+         static List<Persona> lista;
 
          static SqlConnection connection;
          static SqlCommand command;
@@ -106,20 +106,109 @@ namespace Ejercicio_61
 
         public static Persona LeerPorId(int id)
         {
+            Persona persona;
+            try
+            {
+                if ((connection != null) && (connection.State == ConnectionState.Closed))
+                {
+                    
+                    command.Parameters.Clear();
+                    connection.Open();
+
+                    command.Connection = connection;
+                    command.Parameters.Add(new SqlParameter("id", id));
+
+                    command.CommandText = "select * from persona where id=@id";
+
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        persona = new Persona(int.Parse(sqlDataReader[0].ToString()), sqlDataReader[1].ToString(), sqlDataReader[2].ToString());
+                        connection.Close();
+                        return persona;
+                    }
+
+                    
+                }
+                else if (connection is null)
+                {
+                    MessageBox.Show("conexion nula o qdo abierta");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(" lanzo excepcion Leer x id");
+            }
+            finally
+            {
+                connection.Close();
+            }
             return new Persona();
+            
         }
 
         //Modificar: modificará una persona a partir de su ID.
 
-        public static void Modificar(int id)
+        public static void Modificar(int id, string nombre, string apellido)
         {
+            try
+            {
+                if ((connection != null) && (connection.State == ConnectionState.Closed))
+                {
+                    command.Parameters.Clear();
+                    connection.Open();
 
+                    command.Connection = connection;
+                    command.Parameters.Add(new SqlParameter("nombre", nombre ));
+                    command.Parameters.Add(new SqlParameter("apellido", apellido));
+                    command.Parameters.Add(new SqlParameter("id", id));
+                    command.CommandText = "Update Persona set nombre=@nombre, apellido=@apellido where id=@id";
+
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+
+                    connection.Close();
+                }
+                else if (connection is null)
+                {
+                    MessageBox.Show("conexion nula o qdo abierta");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(" lanzo excepcion Modificar");
+            }
         }
 
        // Borrar: eliminará una persona de la base de datos a partir de su ID
 
         public static void Borrar(int id)
         {
+            try
+            {
+                if ((connection != null) && (connection.State == ConnectionState.Closed))
+                {
+                    command.Parameters.Clear();
+                    connection.Open();
+
+                    command.Connection = connection;
+                   
+                    command.Parameters.Add(new SqlParameter("id", id));
+                    command.CommandText = "delete from Persona where id=@id";
+
+                    SqlDataReader sqlDataReader = command.ExecuteReader();
+
+                    connection.Close();
+                }
+                else if (connection is null)
+                {
+                    MessageBox.Show("conexion nula o qdo abierta");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show(" lanzo excepcion Modificar");
+            }
 
         }
 

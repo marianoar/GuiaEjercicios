@@ -60,7 +60,6 @@
             this.ltbPersonas.Name = "ltbPersonas";
             this.ltbPersonas.Size = new System.Drawing.Size(391, 186);
             this.ltbPersonas.TabIndex = 8;
-            this.ltbPersonas.SelectedIndexChanged += new System.EventHandler(this.ltbPersonas_SelectedIndexChanged);
             this.ltbPersonas.DoubleClick += new System.EventHandler(this.ltbPersonas_DoubleClick);
             // 
             // btnGuardar
@@ -91,6 +90,7 @@
             this.btnEliminar.TabIndex = 5;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnModificar
             // 
@@ -100,6 +100,7 @@
             this.btnModificar.TabIndex = 6;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // label1
             // 
