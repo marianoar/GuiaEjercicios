@@ -1,0 +1,10 @@
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\bin\Debug\Ejercicio 63.exe.config
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\bin\Debug\Ejercicio 63.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\bin\Debug\Ejercicio 63.pdb
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio 63.csprojAssemblyReference.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio_63.Form1.resources
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio_63.Properties.Resources.resources
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio 63.csproj.GenerateResource.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio 63.csproj.CoreCompileInputs.cache
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio 63.exe
+C:\Users\compa\Desktop\UTN\00PyL\GuiaEjercicios\Ejercicio 63\obj\Debug\Ejercicio 63.pdb
